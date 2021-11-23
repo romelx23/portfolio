@@ -1,0 +1,35 @@
+.container__about {
+  height: 35vh;
+  grid-column: 1/11;
+  padding: 50px 0;
+  text-align: left;
+  hr {
+    height: 1px;
+    border: none;
+    background: rgba(255, 255, 255, 0.582);
+  }
+}
+.content__timeline {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  .card__time {
+    width: 150px;
+    padding-top: 20px;
+    padding-right: 20px;
+    h2:after {
+      content: " <--";
+      font-weight: 200;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content__timeline {
+    .card__time {
+      width: 100px;
+    }
+  }
+}

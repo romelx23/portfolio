@@ -1,0 +1,17 @@
+.container__contact{
+    height: 30vh;
+    grid-column: 1/11;
+    margin: 10px 0;
+    hr{
+        height: 1px;
+        border: none;
+        background: rgba(255, 255, 255, 0.582);
+    }
+}
+.card__container{
+    display: flex;
+    .card__contact{
+        width: 200px;
+    }
+    padding-bottom:50px;
+}

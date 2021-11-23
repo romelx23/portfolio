@@ -1,0 +1,116 @@
+.container__hero{
+    grid-column: 1/11;
+    grid-row: 2/9;
+    display: flex;
+    justify-content: space-around;
+    // flex-wrap: wrap;
+}
+.hero__info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: translateUp 1s;
+    .hero__subtitle{
+        font-size: 30px;
+    }
+    .hero__title{
+        font-size: 60px;
+    }
+}
+.hero__images{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    animation: translateUp 1s;
+}
+
+.hero__images .tech{
+    position: absolute;
+    transition: transform 1s,width 1s;
+}
+.hero__images .bomberman{
+    filter: drop-shadow(16px 16px 20px rgb(28, 28, 231));
+    transition: transform 1s;
+}
+.hero__images .tech:nth-child(2){
+    right: -60px;
+    // animation: rotar 1.5s infinite linear;
+}
+.hero__images .tech:nth-child(3){
+    top: 20px;
+    left: 20px;
+}
+.hero__images .tech:nth-child(4){
+    top: 20px;
+    right: 20px;
+}
+.hero__images .tech:nth-child(5){
+    bottom: -20px;
+    right:-20px;
+}
+.hero__images .tech:nth-child(6){
+    bottom: -20px;
+    left: -40px;
+}
+.hero__images .tech:nth-child(7){
+    left: -10px;
+}
+
+@keyframes rotar {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes translateUp {
+    0%{
+        transform: translateY(100px);
+    }100%{
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width:500px){
+    .tech{
+    }
+    .hero__images .tech:nth-child(2){
+        transform: scale(.5);
+        // width: 80px;
+
+    }
+    .hero__images .tech:nth-child(3){
+        transform: scale(.5);
+
+    }
+    .hero__images .tech:nth-child(4){
+        transform: scale(.5);
+
+    }
+    .hero__images .tech:nth-child(5){
+        transform: scale(.5);
+
+    }
+    .hero__images .tech:nth-child(6){
+        transform: scale(.5);
+
+    }
+    .hero__images .tech:nth-child(7){
+        transform: scale(.5);
+
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .bomberman{
+        transform: scale(.5);
+    }
+}

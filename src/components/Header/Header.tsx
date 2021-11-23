@@ -1,0 +1,17 @@
+import React from 'react';
+import './Header.scss'
+import github from '../../assets/header/github.svg';
+import bullet from '../../assets/header/bullet.svg';
+import linked from '../../assets/header/linked.svg';
+export const Header = () => {
+    return (
+        <div className="container__header">
+            <h1 className="icon__nav__logo" >Romel</h1>
+            <div className="content__images">
+                <img className="icon__nav" src={github} alt="github" />
+                <img className="icon__nav" src={linked} alt="linked" />
+                <img className="icon__nav" src={bullet} alt="bullet" />
+            </div>
+        </div>
+    )
+}

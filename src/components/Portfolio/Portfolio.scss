@@ -1,0 +1,19 @@
+.container__portfolio{
+    // height: 100vh;
+    grid-column: 1/11;
+}
+
+.portafolio__title{
+    margin: 20px 0;
+}
+.container__cards{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
+}
+
+@media screen and (max-width:400px){
+    .container__cards{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+}

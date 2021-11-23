@@ -1,0 +1,12 @@
+.container__tech{
+    padding-top: 50px;
+    grid-column: 1/11;
+    text-align: left;
+    .container__cards{
+        display: flex;
+        flex-wrap: wrap;
+        .card__tech{
+            width: 200px;
+        }
+    }
+}

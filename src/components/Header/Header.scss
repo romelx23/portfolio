@@ -1,0 +1,29 @@
+.container__header{
+    grid-column: 1/11;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon__nav{
+    animation: entry3 .5s;
+    // background: red;
+}
+.icon__nav__logo{
+    animation: entry2 .5s;
+}
+@keyframes entry3{
+    0%{
+        transform: translateX(20px);
+    }100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes entry2 {
+    0%{
+        transform: translateX(-200px);
+        // opacity: .5;
+    }100%{
+        transform: translateX(0px);
+        // opacity: 1;
+    }
+}
