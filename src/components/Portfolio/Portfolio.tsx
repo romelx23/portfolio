@@ -12,7 +12,7 @@ export const Portfolio = () => {
     useEffect(() => {
         projects()
     }, []);
-    console.log(repo);
+    // console.log(repo);
     return (
         <div className="container__portfolio">
             <h1 className="portafolio__title">Portafolio</h1>
