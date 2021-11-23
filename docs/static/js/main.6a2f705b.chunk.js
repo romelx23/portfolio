@@ -451,7 +451,7 @@
             )
               return;
             window.addEventListener("load", function () {
-              var e = "".concat("", "/service-worker.js");
+              var e = "".concat("", "./service-worker.js");
               R
                 ? (!(function (e) {
                     fetch(e)
