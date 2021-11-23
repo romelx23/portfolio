@@ -1,4 +1,4 @@
-const base_url=`${process.env.PUBLIC_URL}/assets`;
+const base_url=`${process.env.PUBLIC_URL}./assets`;
 export const Images={
     github:`${base_url}/header/github.svg`,
     bullet:`${base_url}/header/bullet.svg`,
